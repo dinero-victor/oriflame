@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+.test {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+.testimonial-text {
+    background: white;
+    color: black;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.user-text {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.user-text .fas {
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.user-text h3 {
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.testimonial-pic {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-pic {
+    width: 80px;
+    padding: 5px;
+    border-radius: 20%;
+    margin: 7px;
+    cursor: pointer;
+}
+.user-text.active-text {
+    display: block;
+    animation: moveup 0.3s linear forwards;
+}
+.user-pic.active-pic {
+    width: 100px;
+    border: 3px solid black;
+}
+#blog h1 {
+    font-size:35px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #f47514;
+    letter-spacing: 5px;
+}
+@keyframes moveup {
+    0% {
+        margin-top: 25px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pop-up {
+    width: 500px;
+    height: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    box-shadow: 4px 4px 3px rgb(173, 172, 172);
+}
+.pop-up img {
+    width: 80px;
+    margin-top: -50px;
+    border-radius: 50%;
+}
+.pop-up h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+}
+.pop-up h3 {
+    font-size: 1rem;
+}
+.pop-up p {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+.pop-up .social-icons-footer i{
+    width: 30px;
+    padding: 4px;
+}
+.pop-up .social-icons-footer .fa {
+    color: #0e0d0c;
+    font-size: 30px;
+}
+.pop-up .social-icons-footer .fa:hover {
+    color: blue;
+}
+.pop-up button {
+    align-items: center;
+    width: 100px;
+    font-size: 18px;
+    justify-content: center;
+    border-radius: 15px;
+    border: 0.5px solid rgb(114, 113, 113);
+    background: white;
+    color: #000;
+    padding: 4px;
+}
+.pop-up button:hover {
+    background: rgb(116, 115, 115);
+    color: white;
+    border: none;
+}
